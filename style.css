@@ -1,0 +1,92 @@
+html {
+  width: 100%;
+}
+body {
+  margin:0px;
+}
+/* navBar */
+nav {
+  display: flex;
+  padding: 10px 0;
+}
+nav .navTitle{
+  width: 30%;
+  text-align: center;
+}
+nav .selectItem{
+  width: 100%;
+  text-align: right;
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+}
+.selectItem span{
+  padding:0 15px;
+}
+.banner {
+    color:black;
+    font-size:40px;
+    text-align:center;
+    padding:150px 0;
+    background-color: #bccdd7;
+}
+.content {
+    width:1200px;
+    margin:0 auto;
+}
+.box{
+    width:20%; /* 這邊會去抓contnet的25% 1200*.20  */
+    margin:1%;
+    background-color: white;
+    display:inline-block;
+    vertical-align:top;
+}
+.box .boxImage {
+  height: 200px;
+  width: 100%;
+  vertical-align: top; /* image這邊不加會有空隙 可以google一下css reset */ 
+}
+.box > .title {
+  text-align: center;
+  background-color: #c8dde8;
+  margin: 0;
+}
+.selectItem .material-icons {
+  display: none;
+}
+/* 601~1200px */
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+  .content {
+    width:90%;
+  }
+  .box {
+    width: 46%;
+  }
+  .box .boxImage{
+    height: 150px;
+  }
+}
+/* width < 600*/
+@media screen and (max-width: 600px){
+  .content {
+    width:90%;
+  }
+  .box {
+    width: 96%;
+  }
+  .box .boxImage{
+    height: 250px;
+  }
+  .selectItem span{
+    display: none;
+  }
+  .selectItem .material-icons {
+    margin-right: 5px;
+    font-size:30px;
+    display: block;
+  }
+}
+
+/* @media screen and(min-width: 601px) { */
+
+/* } */

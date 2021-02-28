@@ -42,6 +42,7 @@ nav .selectItem {
   vertical-align: top;
 }
 .box .boxImage {
+  height: 200px;
   width: 100%;
   vertical-align: top; /* image這邊不加會有空隙 可以google一下css reset */
 }
@@ -59,10 +60,11 @@ nav .selectItem {
     width: 90%;
   }
   .box {
-    width: 46%;
+    width: 44%;
   }
   .box .boxImage {
-    height: 150px;
+    height: 100%;
+    width: 100%;
   }
 }
 /* width < 600*/
@@ -74,7 +76,7 @@ nav .selectItem {
     width: 96%;
   }
   .box .boxImage {
-    height: 250px;
+    height: 100%;
   }
   .selectItem span {
     display: none;

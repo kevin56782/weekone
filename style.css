@@ -33,6 +33,8 @@ nav .selectItem{
 .content {
     width:1200px;
     margin:0 auto;
+  
+ 
 }
 .box{
     width:20%; /* 這邊會去抓contnet的25% 1200*.20  */

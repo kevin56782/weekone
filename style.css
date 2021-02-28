@@ -1,62 +1,93 @@
+html {
+  width: 100%;
+}
+body {
+  margin: 0px;
+}
+/* navBar */
+nav {
+  display: flex;
+  padding: 10px 0;
+}
+nav .navTitle {
+  width: 30%;
+  text-align: left;
+}
+nav .selectItem {
+  width: 100%;
+  text-align: right;
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+}
+.selectItem span {
+  padding: 0 15px;
+}
+.banner {
+  color: black;
+  font-size: 40px;
+  text-align: center;
+  padding: 150px 0;
+  background-color: #bccdd7;
+}
+.content {
+  width: 1200px;
+  margin: 0 auto;
+}
+.box {
+  width: 20%; /* 這邊會去抓contnet的25% 1200*.20  */
+  margin: 1%;
+  background-color: white;
+  display: inline-block;
+  vertical-align: top;
+}
+.box .boxImage {
+  height: 200px;
+  width: 100%;
+  vertical-align: top; /* image這邊不加會有空隙 可以google一下css reset */
+}
+.box > .title {
+  text-align: center;
+  background-color: #c8dde8;
+  margin: 0;
+}
+.selectItem .material-icons {
+  display: none;
+}
+/* 601~1200px */
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+  .content {
+    width: 90%;
+  }
+  .box {
+    width: 44%;
+  }
+  .box .boxImage {
+    height: 100%;
+    width: 100%;
+  }
+}
+/* width < 600*/
+@media screen and (max-width: 600px) {
+  .content {
+    width: 90%;
+  }
+  .box {
+    width: 96%;
+  }
+  .box .boxImage {
+    height: 100%;
+  }
+  .selectItem span {
+    display: none;
+  }
+  .selectItem .material-icons {
+    margin-right: 5px;
+    font-size: 30px;
+    display: block;
+  }
+}
 
-<!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="style.css" rel="stylesheet">
-    <!-- google free icon -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  </head>
-  <body>
-    <nav>
-      <div class="navTitle">
-        <span>
-          My Website
-        </span>
-      </div>
-      <div class="selectItem">
-        <span>item1</span>
-        <span>item2</span>
-        <span>item3</span>
-        <span>item4</span>
-        <i class="material-icons">reorder</i>
-      </div>
-    </nav>
-    <div class="banner">Welcome to MyHome</div>
-    <div class="content">
-        <div class="box">
-          <img class="boxImage object-fit object-fit_contain" src="https://photo.travelking.com.tw/scenery/36C8FB62-5AFB-4249-B911-EE7AEA50B6BB_e.jpg" />
-          <p class="title">台北車站</p>
-        </div>
-        <div class="box">
-          <img class="boxImage object-fit object-fit_contain" src="http://4.blog.xuite.net/4/f/4/a/19751934/blog_1136577/txt/329078774/0.jpg" />
-          <p class="title">桃園車站</p>
-        </div>      
-        <div class="box">
-          <img class="boxImage" src="https://buuz.tw/wp-content/uploads/20190216144801_69.jpg" />
-          <p class="title">台中車站</p>
-        </div>
-        <div class="box"> 
-          <img class="boxImage" src="https://photo.travelking.com.tw/scenery/83DD7145-D68D-4685-95FE-FA12B18F8851_e.jpg" />
-          <p class="title">台南車站</p>
-        </div>
-        <div class="box"> 
-          <img class="boxImage" src="https://trexmama.files.wordpress.com/2017/05/img_7256.jpg" />
-          <p class="title">宜蘭車站</p>
-        </div>
-        <div class="box"> 
-          <img class="boxImage" src="https://attach.mobile01.com/attach/201903/mobile01-6dedd2754386ac2738fffa342c9a3ba9.jpg" />
-          <p class="title">花蓮車站</p>
-        </div>
-        <div class="box"> 
-          <img class="boxImage" src="https://tour.taitung.gov.tw/image/23580/1024x768" />
-          <p class="title">台東車站</p>
-        </div>
-        <div class="box"> 
-          <img class="boxImage" src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Chaozhou_Station_20150901.jpg" />
-          <p class="title">屏東潮州車站</p>
-        </div>
-    </div>
-  </body>
-</html>
+/* @media screen and(min-width: 601px) { */
+
+/* } */
